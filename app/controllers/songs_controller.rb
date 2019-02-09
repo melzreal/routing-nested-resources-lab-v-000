@@ -2,8 +2,7 @@ class SongsController < ApplicationController
   def index
 
     if params[:artist_id]
-        x = Artist.find(params[:artist_id])
-        if x === nil
+       if Artist.find(params[:artist_id]).empty?
           flash[:alert] = "Artist not found."
           redirect_to artists_path
         else
