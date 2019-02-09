@@ -1194,3 +1194,4 @@ Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
 Processing by SongsController#index as HTML
   Parameters: {"artist_id"=>"abc"}
   [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 1]]
