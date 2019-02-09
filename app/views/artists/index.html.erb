@@ -4,7 +4,3 @@
     <li><%= link_to artist.name, artist_path(artist) %></li>
   <% end %>
 </ul>
-
-<% if flash[:alert] %>
-  <div class="alert"><%= flash[:alert] %></div>
-<% end %>
